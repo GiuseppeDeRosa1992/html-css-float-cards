@@ -17,18 +17,64 @@ body {
     margin: 0 auto;
 }
 
+header, .lorem {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.f-left {
+    float: left;
+}
+
+.color {
+    color: black;
+}
+
+.padding {
+    padding: 5px 0;
+}
+
 
 /* CSS HEADER */
 
 h1 {
     color: blueviolet;
-    text-align: center;
     font-weight: 800;
     margin: 20px 0 30px 0;
 }
 
 /*CSS MAIN */
-p {
-    color: black;
-    text-align: center;
+.row {
+    margin-top: 30px;
+}
+
+.col {
+    height: 100px;
+    width: calc(100% / 3 - 20px);
+    background-color: black;
+    margin-left: 20px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.content-col {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 0.9em;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
 }
